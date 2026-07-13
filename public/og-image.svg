@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508"/>
+      <stop offset="50%" stop-color="#0c0c12"/>
+      <stop offset="100%" stop-color="#111119"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#00b894"/>
+    </linearGradient>
+    <linearGradient id="orb1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(108,92,231,0.12)"/>
+      <stop offset="100%" stop-color="rgba(108,92,231,0)"/>
+    </linearGradient>
+    <linearGradient id="orb2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0,184,148,0.08)"/>
+      <stop offset="100%" stop-color="rgba(0,184,148,0)"/>
+    </linearGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="60"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="180" y1="0" x2="180" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="420" y1="0" x2="420" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="480" y1="0" x2="480" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="540" y1="0" x2="540" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="660" y1="0" x2="660" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="780" y1="0" x2="780" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="840" y1="0" x2="840" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="960" y1="0" x2="960" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="1020" y1="0" x2="1020" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="1080" y1="0" x2="1080" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="1140" y1="0" x2="1140" y2="630" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="180" x2="1200" y2="180" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="540" x2="1200" y2="540" stroke="#6c5ce7" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#6c5ce7" stroke-width="1"/>
+  </g>
+
+  <!-- Ambient orbs -->
+  <circle cx="200" cy="100" r="300" fill="url(#orb1)" filter="url(#blur1)"/>
+  <circle cx="1000" cy="500" r="250" fill="url(#orb2)" filter="url(#blur2)"/>
+
+  <!-- Logo mark (top-left) -->
+  <defs>
+    <clipPath id="og-logo-clip">
+      <circle cx="116" cy="96" r="36"/>
+    </clipPath>
+  </defs>
+  <circle cx="116" cy="96" r="36" fill="url(#accent)"/>
+  <g clip-path="url(#og-logo-clip)">
+    <path d="M100 72 L132 96 L100 120" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M136 72 L104 96 L136 120" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="118" cy="96" r="1.5" fill="rgba(255,255,255,0.7)"/>
+  </g>
+
+  <!-- Accent line -->
+  <rect x="80" y="160" width="60" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <!-- Name -->
+  <text x="80" y="240" font-family="'Space Grotesk','Inter','Segoe UI',Arial,sans-serif" font-weight="700" font-size="72" fill="#f4f4f8" letter-spacing="-2">Shiva Kumar</text>
+
+  <!-- Title -->
+  <text x="80" y="310" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="500" font-size="32" fill="#9a9ab0">Software Engineer &amp; Full Stack Developer</text>
+
+  <!-- Tagline -->
+  <text x="80" y="370" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="400" font-size="22" fill="#5c5c72">Building performant, scalable web applications with modern technologies.</text>
+
+  <!-- Tech pills -->
+  <g transform="translate(80, 420)">
+    <rect width="100" height="36" rx="18" fill="rgba(108,92,231,0.12)"/>
+    <text x="50" y="23" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="600" font-size="14" fill="#6c5ce7">React</text>
+  </g>
+  <g transform="translate(200, 420)">
+    <rect width="110" height="36" rx="18" fill="rgba(108,92,231,0.12)"/>
+    <text x="55" y="23" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="600" font-size="14" fill="#6c5ce7">Node.js</text>
+  </g>
+  <g transform="translate(330, 420)">
+    <rect width="80" height="36" rx="18" fill="rgba(108,92,231,0.12)"/>
+    <text x="40" y="23" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="600" font-size="14" fill="#6c5ce7">Java</text>
+  </g>
+  <g transform="translate(430, 420)">
+    <rect width="120" height="36" rx="18" fill="rgba(108,92,231,0.12)"/>
+    <text x="60" y="23" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="600" font-size="14" fill="#6c5ce7">TypeScript</text>
+  </g>
+  <g transform="translate(570, 420)">
+    <rect width="110" height="36" rx="18" fill="rgba(108,92,231,0.12)"/>
+    <text x="55" y="23" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-weight="600" font-size="14" fill="#6c5ce7">MongoDB</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(108,92,231,0.03)"/>
+  <text x="80" y="616" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="500" font-size="14" fill="#5c5c72">shiva.dev</text>
+  <text x="1120" y="616" text-anchor="end" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="500" font-size="14" fill="#5c5c72">Open to Work</text>
+  <circle cx="1060" cy="611" r="5" fill="#00b894"/>
+</svg>

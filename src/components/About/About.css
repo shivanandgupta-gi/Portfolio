@@ -1,0 +1,132 @@
+/* ===== About Section ===== */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-visual {
+  position: sticky;
+  top: 120px;
+}
+
+/* Avatar */
+.about-avatar-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 32px;
+}
+
+.about-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px dashed var(--accent);
+  opacity: 0.2;
+  animation: spinSlow 30s linear infinite;
+}
+
+@keyframes spinSlow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Quick Stats */
+.about-quick-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quick-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--text-2);
+}
+
+.quick-stat i {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* Content */
+.content-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+.about-tagline {
+  font-size: 1.05rem;
+  color: var(--accent2);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-text-block {
+  margin-bottom: 32px;
+}
+
+.about-text-block p {
+  color: var(--text-2);
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.about-text-block strong {
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+.about-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-visual {
+    position: static;
+  }
+
+  .about-quick-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}

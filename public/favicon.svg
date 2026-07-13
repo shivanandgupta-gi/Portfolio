@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0984e3"/>
+      <stop offset="50%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#00cec9"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="circle-clip">
+      <circle cx="256" cy="256" r="256"/>
+    </clipPath>
+    <filter id="inner-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dx="0" dy="4"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feFlood flood-color="rgba(0,0,0,0.15)"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Circle background -->
+  <circle cx="256" cy="256" r="256" fill="url(#g)"/>
+
+  <!-- Geometric mark: interlocking angular shapes -->
+  <g clip-path="url(#circle-clip)" filter="url(#inner-shadow)">
+    <!-- Primary shape: bold right-pointing chevron -->
+    <path
+      d="M172 148 L320 256 L172 364"
+      fill="none"
+      stroke="rgba(255,255,255,0.92)"
+      stroke-width="42"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Secondary shape: offset left-pointing chevron (glassmorphism layer) -->
+    <path
+      d="M340 148 L192 256 L340 364"
+      fill="none"
+      stroke="rgba(255,255,255,0.38)"
+      stroke-width="42"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Center dot accent -->
+    <circle cx="256" cy="256" r="10" fill="rgba(255,255,255,0.7)"/>
+  </g>
+
+  <!-- Glass reflection overlay -->
+  <ellipse cx="220" cy="140" rx="160" ry="100" fill="url(#g2)"/>
+</svg>
