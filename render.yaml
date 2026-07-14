@@ -8,12 +8,8 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: MONGO_URI
-        value: mongodb+srv://Portfolio:uzsuMywK2aOvUhwm@cluster0.5oakejq.mongodb.net/portfolio?retryWrites=true&w=majority&appName=Cluster0
       - key: DB_NAME
         value: portfolio
-      - key: CORS_ORIGIN
-        value: https://portfolio-uzsu.onrender.com
       - key: SMTP_HOST
         value: smtp.gmail.com
       - key: SMTP_PORT
@@ -22,7 +18,5 @@ services:
         value: "false"
       - key: SMTP_USER
         value: shivanandgupta316@gmail.com
-      - key: SMTP_PASS
-        value: bribexsgohpsshzw
       - key: CONTACT_EMAIL
         value: shivanandgupta316@gmail.com
