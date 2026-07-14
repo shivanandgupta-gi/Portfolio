@@ -39,7 +39,13 @@ app.use(errorHandler);
 
 // Graceful shutdown
 async function start() {
-  await connectDB();
+  try {
+    await connectDB();
+    console.log('Database connected successfully');
+  } catch (err) {
+    console.error('Database connection error:', err.message);
+    console.error('Full error:', err);
+  }
 
   const server = app.listen(config.port, () => {
     console.log(`Portfolio server running on http://localhost:${config.port}`);
